@@ -27,10 +27,10 @@ class YTHandler(ContentHandler):
             self.inEntry = False
             videos = videos \
                      + "    <li><a href='" + self.link + "'>" \
-                     + self.title + "</a></li>\n"
+                     + self.titulo + "</a></li>\n"
         elif self.inEntry:
-            if name == 'title':
-                self.title = self.content
+            if name == 'titulo':
+                self.titulo = self.content
                 self.content = ""
                 self.inContent = False
 
