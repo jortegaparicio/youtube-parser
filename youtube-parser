@@ -36,7 +36,7 @@ class YTHandler(ContentHandler):
     def characters (self, chars):
         if self.inContent:
             self.content =ç
-
+aofhdoasfdpiasdf
 Parser = make_parser()
 Parser.setContentHandler(YTHandler())
 
