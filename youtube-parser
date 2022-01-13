@@ -26,7 +26,6 @@ class YTHandler(ContentHandler):
     def endElement (self, name):
         global videos
 
-        if name == 'entry':
             self.inEntry = False
             videos = videos \
                      + "    <li><a href='" + self.link + "'>" \
