@@ -12,7 +12,6 @@ class YTHandler(ContentHandler):
         self.inEntry = False
         self.inContent = False
         self.content = ""
-        self.title = ""
         self.link = ""
 
     def startElement (self, name, attrs):
