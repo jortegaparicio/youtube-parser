@@ -14,13 +14,13 @@ class YTHandler(ContentHandler):
         self.content = ""
         self.link = ""
 
-    def startElement (self, name, attrs):
+    def startElement (self, name, atributo):
         if name == 'entry':
         elif self.inEntry:
             if name == 'title':
                 self.inContent = True
             elif name == 'link':
-                self.link = attrs.get('href')
+                self.link = atributo.get('href')
 
     def endElement (self, name):
         global videos
