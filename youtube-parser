@@ -17,7 +17,6 @@ class YTHandler(ContentHandler):
 
     def startElement (self, name, attrs):
         if name == 'entry':
-            self.inEntry = True
         elif self.inEntry:
             if name == 'title':
                 self.inContent = True
@@ -52,7 +51,6 @@ if __name__ == "__main__":
 <html lang="en">
   <body>
     <h1>Channel contents:</h1>
-    <ul>
 {videos}
     </ul>
   </body>
