@@ -9,7 +9,6 @@ class YTHandler(ContentHandler):
 
     def __init__ (self):
         self.inEntry = False
-        self.inContent = False
         self.content = ""
         self.link = ""
 
